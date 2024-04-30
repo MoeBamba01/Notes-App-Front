@@ -37,8 +37,7 @@ const Toast = ({isShown, message, type, onClose}) => {
         <LuCheck className='text-xl text-green-500' />
         )}
         </div>
-       
-
+    
         <p className='text-sm text-slate-800'>{message}</p>
       </div>
       </div>

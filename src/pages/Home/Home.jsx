@@ -129,7 +129,7 @@ const onSearchNote = async (query) => {
 const updateIsPinned = async (noteData) => {
   const noteId = noteData._id;
   console.log("Note ID:", noteId);
-  
+
   try {
     const response = await axiosInstance.put(`/update-note-pinned/${noteId}`, {
       isPinned: !noteData.isPinned // Corrected field access
@@ -181,11 +181,11 @@ const handleClearSearch = () => {
       onPinNote={() => updateIsPinned(item)}
       className="mx-auto max-w-md"
     />
-  ))};
+  ))}
 
       </div> : <EmptyCard  
       imgSrc={ isSearch ? NoDataImg : AddNotesImg} 
-      message={isSearch ? `Oops No notes matching your search Found ` :`Start creating your first Note Click the "Add" button to start writing your thoughts, reminders, ideas etccc`} /> }
+      message={isSearch ? `Oops No notes matching your search Found ` :`Start creating your first Note Click the "Add" button to start writing your thoughts, reminders, ideas but write something normal i tell you`} /> }
     </div>
 
     <button className='w-16 h-16 flex items-center justify-center rounded-2xl bg-primary hover:bg-blue-600 absolute right-10 bottom-10'

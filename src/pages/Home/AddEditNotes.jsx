@@ -102,7 +102,6 @@ const AddEditNotes = ({ noteData, type, getAllNotes, onClose, showToastMessage})
 
         </button>
 
-
         <div className="flex flex-col gap-2">
             <label className='input-label'>Title</label>
             <input 
