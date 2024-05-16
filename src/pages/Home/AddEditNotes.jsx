@@ -85,6 +85,7 @@ const AddEditNotes = ({ noteData, type, getAllNotes, onClose, showToastMessage})
         } else {
             addNewNote() 
         }
+        onClose();
     };
 
 
